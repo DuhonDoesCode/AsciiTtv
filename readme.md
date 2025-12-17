@@ -5,7 +5,7 @@ A simple twitch.tv to console ascii converter. Made in under a day, so don't min
 ## Table of Contents
 
 - [Installation](#installation)
-- [Usage](#usage)
+- [Config file](#config)
 - [Support](#support)
 - [Contributing](#contributing)
 
@@ -14,7 +14,7 @@ A simple twitch.tv to console ascii converter. Made in under a day, so don't min
 Clone, create a virtual environment (python 3.11)
 
 ```sh
-git clone
+git clone https://github.com/DuhonDoesCode/AsciiTtv.git
 python3.11 -m venv .venv
 source .venv/bin/activate
 ```
@@ -36,7 +36,7 @@ Config options are streamer, resolution and tileset.
 
 ## Support
 
-Please [open an issue](https://github.com/fraction/readme-boilerplate/issues/new) for support.
+Please [open an issue](https://github.com/DuhonDoesCode/AsciiTtv/issues) for support.
 
 ## Contributing
 
