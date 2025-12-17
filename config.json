@@ -1,5 +1,5 @@
 {
-    "streamer": "polypuff",
-    "resolution": 1,
-    "tileset": "⠿⠾⠶⠴⠲⠦⠒⠤⠂⠁⠀"
+    "streamer": "example",
+    "resolution": 3,
+    "tileset": "█▓⠿¶⠾⠶⠴⠦⠒⠂⠀"
 }

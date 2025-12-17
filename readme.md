@@ -5,6 +5,8 @@ A simple twitch.tv to console ascii converter. Made in under a day, so don't min
 ## Table of Contents
 
 - [Installation](#installation)
+- [Usage](#usage-tips)
+- [TODO]
 - [Config file](#config)
 - [Support](#support)
 - [Contributing](#contributing)
@@ -15,6 +17,7 @@ Clone, create a virtual environment (python 3.11)
 
 ```sh
 git clone https://github.com/DuhonDoesCode/AsciiTtv.git
+cd AsciiTtv
 python3.11 -m venv .venv
 source .venv/bin/activate
 ```
@@ -22,9 +25,15 @@ source .venv/bin/activate
 Install all requirements, edit [config.json](#config), run with utf8 flag
 
 ```sh
-pip install requirements.txt
+pip install -r requirements.txt
 python3.11 -Xutf8 stream.py
 ```
+
+## Usage tips
+At watchable resolutions, the program uses a lot of symbols at once, thus requiring you to zoom out. To do so, either use `ctrl+scroll wheel`, or `crtl+-`.
+
+## TODO
+Add a color toggle, and actual interfacing
 
 ## Config
 
