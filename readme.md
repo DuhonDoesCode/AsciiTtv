@@ -31,7 +31,7 @@ python3.11 -Xutf8 stream.py
 Config options are streamer, resolution and tileset. 
 
 - Streamer: Specifies which stream to put in the terminal. Use the same as its shown in the url (all lowercase).
-- Resolution: specifies how many pixels will be skipped (so higher = smaller).
+- Resolution: specifies how many pixels will be skipped (so higher = smaller output).
 - Tileset: What symbols to use for ASCII display. For correct behavior, make it a single string with no spaces. To the left the "white" tiles, making a gradient into "black" tiles.
 
 ## Support
