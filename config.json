@@ -1,7 +1,7 @@
 {
-    "streamer": "example",
-    "resolution": 10,
-    "tileset": "█▓⠿¶⠾⠶⠴⠦⠒⠂⠀",
-    "colored": 1,
-    "usechafa": 1
+    "streamer": "changethis",
+    "resolution": 5,
+    "tileset": "█▓▒▒░░  ",
+    "colored": 0,
+    "usechafa": 0
 }

@@ -9,11 +9,11 @@ def stream_to_url(url, quality='best'):
     session.set_option("twitch-low-latency", True)
 
     # HLS buffering control
-    session.set_option("hls-live-edge", 1)
-    session.set_option("hls-segment-threads", 1)
+    session.set_option("hls-live-edge", 5)
+    session.set_option("hls-segment-threads", 3)
 
     # Optional but recommended
-    session.set_option("ringbuffer-size", 16 * 1024 * 1024)
+    session.set_option("ringbuffer-size", "16M")
     streams = session.streams(url)
     if streams:
         return streams[quality].to_url()
@@ -21,15 +21,17 @@ def stream_to_url(url, quality='best'):
         raise ValueError("No streams were available.")
 
 colorama.init(autoreset=True)
-streamer = json.dumps(json.loads(open('config.json', 'r+', encoding='utf-8').read())['streamer']).replace('"', "")
+streamer = json.dumps(json.loads(open('config.json', 'r', encoding='utf-8').read())['streamer']).replace('"', "")
 channel_url = f"www.twitch.tv/{streamer}"
 try:
-    stream_url = stream_to_url(channel_url, 'best')
+    stream_url = stream_to_url(channel_url, '480p')
 
     capObj = Display(stream_url)
     cap = capObj.capture
     if not cap.isOpened():
         raise IOError("Cannot open video stream.")
+    time.sleep(1)
+    capObj.prep_frame()
     print("Stream starting in 5!")
     time.sleep(5)
     try:
